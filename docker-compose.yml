@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ascua-postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5450:5432"
+    volumes:
+      - ascua_pgdata:/var/lib/postgresql/data
+
+volumes:
+  ascua_pgdata:
