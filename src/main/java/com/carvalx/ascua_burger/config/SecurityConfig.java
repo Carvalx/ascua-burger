@@ -38,6 +38,7 @@ public class SecurityConfig {
                                 "/api/auth/**",
                                 "/api/productos/**",
                                 "/api/categorias/**",
+                                "/api/reservas/disponibilidad",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",
                                 "/v3/api-docs/**"
